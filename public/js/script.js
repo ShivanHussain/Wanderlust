@@ -16,3 +16,20 @@
       }, false)
     })
   })()
+
+
+ let taxswitch = document.getElementById("flexSwitchCheckDefault");
+    taxswitch.addEventListener("click", () => {
+        let taxinfo = document.getElementsByClassName("tax-info");
+        for(tax of taxinfo){
+            if(tax.style.display != "inline"){
+                tax.style.display = "inline";
+
+            }
+            else{
+                tax.style.display = "none";
+            }
+             
+        }
+       
+        });
