@@ -136,3 +136,8 @@ body{
         display: flex;
         align-items: center;
     }
+@media(max-width:450px){
+    #filters{
+        display:none;
+    }
+}
