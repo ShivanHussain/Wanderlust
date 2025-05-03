@@ -37,7 +37,11 @@ main()
     console.log("some error to connect DB",err);
 })
 async function main() {
-    await mongoose.connect(dbUrl)
+    console.log(dbUrl);
+    await mongoose.connect(dbUrl,{
+         useNewUrlParser: true,
+         useUnifiedTopology: true,
+    })
     
 };
 
